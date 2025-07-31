@@ -49,6 +49,15 @@ CookieAuthentication 1
 
 ## 🕸️ Usage
 
+### 🌐 Launch dashboard
+
+```bash
+python crawler/autoExpand.py
+```
+
+This:
+- Expands `.onion` targets in `crawler/targets.txt`
+
 ### ▶ Run crawler & alert system
 
 ```bash
@@ -85,6 +94,7 @@ streamlit run app.py
 ├── crawler/
 │   ├── scraper.py             # Web scraping via BeautifulSoup + Tor
 │   ├── tor_connector.py       # Tor identity rotation and session mgmt
+│   ├── autoExpand.py          # Expand your Targets automatically
 │   └── targets.txt            # List of .onion URLs to crawl
 ├── data/
 │   └── leaks.db               # SQLite DB (auto-created)
